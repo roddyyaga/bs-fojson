@@ -1,6 +1,6 @@
 {
    "name": "@roddynpm/bs-yojson",
-   "version": "0.0.1",
+   "version": "0.1.0",
    "repository": {
       "type": "git",
       "url": "git+https://github.com/roddyyaga/bs-yojson.git"
@@ -21,12 +21,12 @@
    },
    "homepage": "https://github.com/roddyyaga/bs-yojson#readme",
    "devDependencies": {
-      "bs-platform": "^5.0.1"
+      "bs-platform": "^6.0.1"
    },
    "peerDependencies": {
-      "bs-platform": ">=4.0.0"
+      "bs-platform": "^6.0.1"
    },
    "dependencies": {
-      "@roddynpm/bs-biniou": ""
+      "@roddynpm/bs-biniou": ">=0.1.0"
    }
 }
