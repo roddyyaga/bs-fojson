@@ -1,9 +1,9 @@
 {
-   "name": "@roddynpm/bs-yojson",
-   "version": "0.1.0",
+   "name": "@roddynpm/bs-fojson",
+   "version": "0.3.0",
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/roddyyaga/bs-yojson.git"
+      "url": "git+https://github.com/roddyyaga/bs-fojson.git"
    },
    "scripts": {
       "prepare": "npm run clean && bsb -make-world",
@@ -17,16 +17,16 @@
    ],
    "license": "BSD",
    "bugs": {
-      "url": "https://github.com/roddyyaga/bs-yojson/issues"
+      "url": "https://github.com/roddyyaga/bs-fojson/issues"
    },
-   "homepage": "https://github.com/roddyyaga/bs-yojson#readme",
+   "homepage": "https://github.com/roddyyaga/bs-fojson#readme",
    "devDependencies": {
-      "bs-platform": "^6.0.1"
+      "bs-platform": "^7.0.1"
    },
    "peerDependencies": {
-      "bs-platform": "^6.0.1"
+      "bs-platform": "^7.0.1"
    },
    "dependencies": {
-      "@roddynpm/bs-biniou": ">=0.1.0"
+      "@roddynpm/bs-biniou": "^0.2.0"
    }
 }

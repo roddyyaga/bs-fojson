@@ -1,11 +1,12 @@
 {
-    "name": "@roddynpm/bs-yojson",
+    "name": "@roddynpm/bs-fojson",
     "version": "0.0.1",
     "sources": {
         "dir": "lib",
         "files": [
             "yojson.ml", "yojson.mli",
-            "yojson_biniou.ml", "yojson_biniou.mli"
+            "yojson_biniou.ml", "yojson_biniou.mli",
+            "test_replace.ml"
         ]
     },
     "bs-dependencies": [
