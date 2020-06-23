@@ -121,7 +121,7 @@ let write_t ob x =
   let js_t = to_js x in
   Bi_outbuf.add_string ob (Js.Json.stringify js_t)
 
-let to_outbuf ?(std = false) ob x =
+let to_outbuf ?(std = true) ob x =
   if std then
     if not (is_object_or_array x) then
       json_error "Root is not an object or array"
@@ -497,7 +497,7 @@ module Pretty = struct
     Easy_format.Label
       ((Easy_format.Atom (s, Easy_format.atom), Easy_format.label), format std x)
 
-  let format ?(std = false) x =
+  let format ?(std = true) x =
     if std && not (is_object_or_array x) then
       json_error
         "Root is not an object or array as requested by the JSON standard"
@@ -572,7 +572,7 @@ All possible cases defined in Yojson:
     let js_t = to_js x in
     Bi_outbuf.add_string ob (Js.Json.stringify js_t)
 
-  let to_outbuf ?(std = false) ob x =
+  let to_outbuf ?(std = true) ob x =
     if std then
       if not (is_object_or_array x) then
         json_error "Root is not an object or array"
@@ -1052,7 +1052,7 @@ All possible cases defined in Yojson:
     let js_t = to_js x in
     Bi_outbuf.add_string ob (Js.Json.stringify js_t)
 
-  let to_outbuf ?(std = false) ob x =
+  let to_outbuf ?(std = true) ob x =
     if std then
       if not (is_object_or_array x) then
         json_error "Root is not an object or array"
@@ -1558,7 +1558,7 @@ All possible cases defined in Yojson:
     let js_t = to_js x in
     Bi_outbuf.add_string ob (Js.Json.stringify js_t)
 
-  let to_outbuf ?(std = false) ob x =
+  let to_outbuf ?(std = true) ob x =
     if std then
       if not (is_object_or_array x) then
         json_error "Root is not an object or array"
